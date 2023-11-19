@@ -1,3 +1,8 @@
-import test_modul_1 as m1
+num = int(input())
 
-print(m1.max1(13, 12))
+a = num // 100
+b = (num % 100) // 10
+c = num % 10
+
+print(a, b, c, sep=(','))
+
