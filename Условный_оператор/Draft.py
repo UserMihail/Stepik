@@ -1,3 +1,6 @@
+a, b, c, e = int(input()), int(input()), int(input()), int(input())
 
-x = int(input("Введите число х: "))
-print('Принадлежит отрезку' if x < -2 or x > 6 else 'Не принадлежит')
+if c == a or c == a - 1 or c == a + 1 and e == b or e == b - 1 or e == b + 1:
+    print('YES')
+else:
+    print('NO')
