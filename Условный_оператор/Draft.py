@@ -1,6 +1,10 @@
-a, b, c, e = int(input()), int(input()), int(input()), int(input())
+n = int(input())
 
-if c == a or c == a - 1 or c == a + 1 and e == b or e == b - 1 or e == b + 1:
-    print('YES')
+if n == 0:
+    print('зеленый')
+elif not(0 < n < 37):
+    print('ошибка ввода')
+elif (0 < n < 11 or 18 < n < 29) - n % 2:
+    print('черный')
 else:
-    print('NO')
+    print('красный')

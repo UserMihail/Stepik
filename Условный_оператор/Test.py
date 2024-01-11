@@ -1,8 +1,4 @@
-a, b, c, d = int(input()), int(input()), int(input()), int(input())
-
-if a == c or a == d:
-    print('YES')
-elif b == c or b == d:
-    print('YES')
-else:
-    print('NO')
+tmp = input() + input()
+print('фиолетовый' if tmp == 'красныйсиний' or tmp == 'синийкрасный' else
+     'оранжевый' if tmp == 'красныйжелтый' or tmp == 'желтыйкрасный' else
+     'зеленый' if tmp == 'синийжелтый' or tmp == 'желтыйсиний' else 'ошибка цвета')
