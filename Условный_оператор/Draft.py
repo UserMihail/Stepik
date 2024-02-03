@@ -1,10 +1,22 @@
-n = int(input())
+a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
 
-if n == 0:
-    print('зеленый')
-elif not(0 < n < 37):
-    print('ошибка ввода')
-elif (0 < n < 11 or 18 < n < 29) - n % 2:
-    print('черный')
+
+if a1 == b2:
+    print(a1)
+elif a2 == b1:
+    print(a2)
+elif a1 == a2 and b1 == b2:
+    print(a1, b1)
+
+elif a1 < a2 and b2 < b1:
+    print(a2, b2)
+elif a1 > a2 and b2 > b1:
+    print(a1, b1)
+
+elif a1 <= a2 and (a2 < b1) and (b2 > b1):
+    print(a2, b1)
+elif a1 > a2 and (b2 > a1) and (b2 <= b1):
+    print(a1, b2)
+
 else:
-    print('красный')
+    print("пустое множество")
